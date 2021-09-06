@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+             <title>blueBus</title>
+             <link href="style.css" rel="stylesheet" type="text/css">
+             <link href="bootstrap.css" rel="stylesheet" type="text/css">
+             <style>
+             label{
+                 color:white;
+             }
+             </style>
+            </head>
+        <body style="background-image: url('bus.JPG');">
+            
+                <div class="row">
+                <ul class="main-nav">
+                    
+                    
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+                </div>
+            
+            <div class="row" style="border: 1px solid red;">
+                
+                    <div class="col-md-3">
+                    <input type="text" name="text" class="search" placeholder="From">
+                </div>  
+                <div class="col-md-3">
+                    <input type="text" name="text" class="search" placeholder="To">
+                </div>
+                <div class="col-md-3">
+                    <input type="date" name="bday">
+                </div>
+                <div class="col-md-3">
+                    <input type="submit" name="submit" class="submit" value="Search Bus" onclick="showlist()">
+                </div>
+                    
+            </div>
+            <div id="showID" style="display: none;">
+            <div class="row">
+                    <div class="col-md-3">
+                     <label>Bus Name : Galaxy</label>
+                   </div>
+                   <div class="col-md-3">
+                        <label>Arrival Time : 11:00 AM</label>
+                      </div>
+                      <div class="col-md-3">
+                            <label>Departure Time : 1:00 pM</label>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-3">
+                     <label>Bus Name : OSRTC</label>
+                   </div>
+                   <div class="col-md-3">
+                        <label>Arrival Time : 11:00 PM</label>
+                      </div>
+                      <div class="col-md-3">
+                            <label>Departure Time : 12:00 AM</label>
+                    </div>
+            </div>
+        </div>
+
+        </body>
+
+        
+    
+</html>
+<script>
+function showlist()
+{
+ document.getElementById('showID').style.display="block";
+}
+</script>
